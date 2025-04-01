@@ -17,7 +17,7 @@ import "dotenv/config"
 
 const MINT = new PublicKey("5gVWytRgbW9PCSPFk7YwGEuFFgDayMx2PSBVjfXh2DDo");
 const SRC = new PublicKey("3ULwLEGfADLi59QkBUKsoaH5JzJTFDPYYHWdu3y2vnpH");
-const DST = new PublicKey("");
+const DST = new PublicKey("G5CTYWYNtoZLdiwL9aU9BH4VGgqdRYbr95SsL41ggDrJ");
 
 async function transferToken(mint: PublicKey, source: PublicKey, dest: PublicKey, amount: number) {
 
