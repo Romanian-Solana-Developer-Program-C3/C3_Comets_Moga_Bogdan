@@ -12,8 +12,10 @@ pub mod lab5 {
     }
 
     pub fn set_favorites(ctx: Context<SetFavorites>, color: String, number: u64, hobbies: Vec<String>) -> Result<()>{
-        msg!("Setting favorites");
+        
         let user_pubkey = ctx.accounts.user.key();
+
+        msg!("Setting favorites");
         msg!("Program id: {}", ctx.program_id);
         msg!("Setting: {}'s favorite number to {} and color to {}", user_pubkey, number, color);
         msg!("Hobbies: {:?}", hobbies);
